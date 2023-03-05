@@ -1,3 +1,40 @@
-.body {
-    background-color: rgb(136, 173, 241);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #372b41;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+li, a, button {
+    text-decoration: none;
+    color: #d6d6d6;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 25px 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navbar {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 20px;
 }
