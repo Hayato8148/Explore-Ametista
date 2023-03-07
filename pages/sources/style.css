@@ -4,18 +4,24 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #372b41;
 }
 
 body {
     font-family: Montserrat, sans-serif;
+    background: #372b41;
 }
 
-li, a, button {
+.navbar-text {
     text-decoration: none;
     color: #d6d6d6;
     font-weight: 500;
     font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar-text:hover {
+   color: orange;
+   scale: 1.1;
 }
 
 header {
@@ -24,6 +30,11 @@ header {
     align-items: center;
     gap: 2rem;
     padding: 25px 10%;
+}
+
+.corpo {
+    background: #d6d6d6;
+    border-radius: 10px;
 }
 
 .logo {
