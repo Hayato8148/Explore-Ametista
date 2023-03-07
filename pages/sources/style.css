@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-text:hover {
-   color: orange;
+   color: cyan;
    scale: 1.1;
 }
 
