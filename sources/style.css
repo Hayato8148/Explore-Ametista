@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5d5ec;
+    font-family: "Noto Sans", sans-serif;
+    -webkit-tap-highlight-color: #7700ff1c;
+  }
+
+header {
+    background-color: #f5eef8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.logo img {
+    height: auto;
+    max-width: 70px;
+}
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.nav-itens li {
+    font-weight: 500;
+    padding: 10px 10px;
+}
+
+.nav-itens a, .sobre-nos {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-itens li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Hamburger menu */
+
+.btn-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    
+    header {
+        padding: 25px 15px;
+    }
+    
+    .nav-itens {
+        display: block;
+        position: absolute;
+        width: 0%;
+        top: 77px;
+        right: 0px;
+        background-color: #f5eef8;
+        transition: .3s;
+        height: 100vh;
+        text-align: center;
+        visibility: hidden;
+        overflow-x: hidden;
+    }
+    
+    .nav.active .nav-itens {
+        width: 50%;
+        height: calc(100vh - 77px);
+        visibility: visible;
+    }
+    
+    .nav-itens li {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border: 2px solid rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
+    }
+
+    .btn-mobile {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        cursor: pointer;
+        border: none;
+        background: none;
+        font-size: 20px;
+    }
+
+    .hamburger {
+        border-top: 2px solid;
+        width: 27px;
+    }
+
+    .hamburger::after, .hamburger::before {
+        content: '';
+        display: block;
+        width: 27px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    
+  .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+    
+  .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+    
+  .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+/* Fim da navbar */
+
+/* Card */
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    height: 214px;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #bacdd8;
+    color: #202020;
+    padding: 8px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 300px;
+    width: 300px;
+    height: 550px;
+    text-decoration: none;
+}
+
+
+.name {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    line-height: 150%;
+    margin: 20px;
+    max-width: 266px;
+    max-height: 200px;
+}
+
+.leia-mais {
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #0077ff;
+    background-color: #e0efff;
+  }
+
+.card_details {
+    padding: 16px 8px 8px;
+    margin-top: auto;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+
+}
+
+.bottom_aligner {
+    margin-top: auto;
+    margin-bottom: 5px;
+}
