@@ -136,12 +136,22 @@ header {
 /* Fim da navbar */
 
 /* Página Inicial */
-
+/*
 .corpo {
     display: flex;
     justify-content: center;
     background-color: white;
-    height: 1200px;
+    height: auto;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 12px;
+}*/
+
+.text {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: auto;
     padding: 25px;
     margin: 25px;
     border-radius: 12px;
