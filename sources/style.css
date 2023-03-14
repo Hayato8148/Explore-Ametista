@@ -139,12 +139,12 @@ header {
 
 .corpo {
     display: flex;
+    justify-content: center;
     background-color: white;
     height: 1200px;
     padding: 25px;
     margin: 25px;
     border-radius: 12px;
-    justify-content: center;
 }
 
 .text h1 {
@@ -182,7 +182,7 @@ header {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .Cards {
