@@ -235,7 +235,7 @@ header {
 }
 
 .card:hover {
-    scale: 1.02;
+    transform: scale(1.02);
 }
 
 .saude {
@@ -281,10 +281,15 @@ header {
     margin-bottom: 5px;
 }
 
+
+
+
 /* Pages */
 
+
+
 .slideshow-container {
-    max-width: 700px;
+    max-width: 800px;
     position: relative;
     margin: auto;
 }
@@ -292,10 +297,9 @@ header {
 .mySlides img {
     max-width: 100%;
     border-radius: 12px;
-    height: 500px;
+    max-height: 550px;
     object-fit: cover;
 }
-  
   
 .prev, .next {
     cursor: pointer;
@@ -303,14 +307,18 @@ header {
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 8px 14px;
     color: white;
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 28px;
     transition: 0.6s ease;
-    border-radius: 12px;
+    border-radius: 16px;
     user-select: none;
     background-color: rgba(0,0,0,0.8);
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(32, 0, 51);
+    transform: scale(1.1);
 }
 
 .next {

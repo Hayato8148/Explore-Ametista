@@ -1,3 +1,5 @@
+//  menu hamburger
+
 const btnMobile = document.querySelector('.btn-mobile')
 
 btnMobile.addEventListener('click', toggleMenu)
@@ -6,6 +8,9 @@ function toggleMenu() {
     const nav = document.querySelector('.nav')
     nav.classList.toggle('active');
 }
+
+
+//  slide de fotos
 
 let slideIndex = 1;
 showSlides(slideIndex);
