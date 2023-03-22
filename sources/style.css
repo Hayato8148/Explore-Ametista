@@ -79,25 +79,25 @@ header {
         display: block;
         position: absolute;
         width: 0%;
-        top: 86px;
+        top: 83px;
         right: 0px;
         background-color: var(--header);
         transition: .3s;
-        height: 100vh;
+        border-radius: 0 0 16px 16px;
         text-align: center;
         visibility: hidden;
         overflow-x: hidden;
+        z-index: 100;
     }
     
     .nav.active .nav-itens {
         width: 50%;
-        height: calc(100vh - 86px);
         visibility: visible;
     }
     
     .nav-itens li {
         padding: 1rem 0;
-        margin: 0 1rem;
+        margin: 1rem 1rem;
         border: 2px solid rgba(0, 0, 0, 0.05);
         border-radius: 15px;
     }
@@ -313,6 +313,7 @@ header {
 .prev, .next {
     cursor: pointer;
     position: absolute;
+    z-index: 1;
     top: 50%;
     width: auto;
     margin-top: -22px;
@@ -368,3 +369,31 @@ header {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+
+/* Mapa */
+
+.mapa a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.minimap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    z-index: 1;
+}
+
+.responsive-iframe {
+    position:absolute ;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 0.3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
