@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&display=swap');
 
+:root {
+    --black: #01161E;
+    /* --background: #C0B4E1; */
+    background: rgb(161, 139, 221);
+    --background-corpo: #FFFAFF;
+    --header: #DAD3EE;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,13 +15,13 @@
 }
 
 body {
-    background-color: #e5d5ec;
+    background-color: var(--background);
     font-family: "Noto Sans", sans-serif;
     -webkit-tap-highlight-color: #7700ff1c;
   }
 
 header {
-    background-color: #f5eef8;
+    background-color: var(--header);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +55,7 @@ header {
 
 .nav-itens a, .sobre-nos {
     text-decoration: none;
-    color: #000;
+    color: var(--black);
 }
 
 .nav-itens li:hover {
@@ -73,7 +81,7 @@ header {
         width: 0%;
         top: 86px;
         right: 0px;
-        background-color: #f5eef8;
+        background-color: var(--header);
         transition: .3s;
         height: 100vh;
         text-align: center;
@@ -145,6 +153,7 @@ header {
 .corpo {
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
 
 .text {
@@ -152,7 +161,7 @@ header {
     width: 1200px;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
+    background-color: var(--background-corpo);
     height: auto;
     padding: 25px 15px 45px;
     margin-top: 25px;
@@ -220,9 +229,9 @@ header {
 .card {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--background-corpo);
     border: 1px solid #bacdd8;
-    color: #202020;
+    color: var(--black);
     padding: 8px;
     border-radius: 12px;
     text-align: center;
@@ -265,7 +274,7 @@ header {
     border-radius: 50px;
     font-weight: 600;
     color: #0077ff;
-    background-color: #e0efff;
+    background-color: #d4e7fc;
   }
 
 .card_details {
@@ -308,7 +317,7 @@ header {
     width: auto;
     margin-top: -22px;
     padding: 8px 14px;
-    color: white;
+    color: var(--background-corpo);
     font-size: 28px;
     transition: 0.6s ease;
     border-radius: 16px;
