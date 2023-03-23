@@ -78,7 +78,8 @@ header {
     .nav-itens {
         display: block;
         position: absolute;
-        width: 0%;
+        width: 50%;
+        height: 0%;
         top: 83px;
         right: 0px;
         background-color: var(--header);
@@ -89,9 +90,13 @@ header {
         overflow-x: hidden;
         z-index: 100;
     }
+
+    .nav-itens::-webkit-scrollbar {
+        display: none;
+    }
     
     .nav.active .nav-itens {
-        width: 50%;
+        height: 315px;
         visibility: visible;
     }
     
