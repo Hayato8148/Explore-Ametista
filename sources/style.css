@@ -313,6 +313,7 @@ header {
     border-radius: 12px;
     max-height: 550px;
     object-fit: cover;
+    size-adjust: 200%;
 }
   
 .prev, .next {
