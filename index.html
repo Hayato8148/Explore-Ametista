@@ -8,33 +8,197 @@
     <link rel="stylesheet" href="./sources/style.css">
 </head>
 <body>
-    
-    <!-- Barra de navegação -->
 
+    <!-- Barra de navegação -->
+    
     <header>
         <span class="logo"><img src="./sources/images/diamante.jpg" alt="Logo">Explore Ametista</span>
-        <nav class="nav">
-            <button class="btn-mobile">Menu
-                <span class="hamburger"></span>
-            </button>
-            <ul class="nav-itens">
-                <li style="background-color: #01161E; border-radius: 12px;"><a style="color: #fff5ff;" href="index.html">Início</a></li>
-                <li><a href="./pages/Turismo.html">Turismo</a></li>
-                <li><a href="./pages/Saúde.html">Saúde</a></li>
-                <li><a href="./pages/Utilidades.html">Utilidades</a></li>
-            </ul>
-        </nav>
+    
+        <div class="nav-itens">
+    
+            <a class="active" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="6 3 18 3 22 9 12 22 2 9"></polygon>
+                    <path d="m12 22 4-13-3-6"></path>
+                    <path d="M12 22 8 9l3-6"></path>
+                    <path d="M2 9h20"></path>
+                </svg>
+                Turismo
+            </a>
+            <a href="./pages/Saúde.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"></path>
+                    <path d="m8.5 8.5 7 7"></path>
+                </svg>
+                Saúde
+            </a>
+            <a href="./pages/Utilidades.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48">
+                    </path>
+                </svg>
+                Utilidades
+            </a>
+            <a id="sobrenos" href="./pages/Sobre-nos.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                Sobre nós
+            </a>
+        </div>
     </header>
 
-    <div class="corpo">
-        <div class="text">
-            <h1>Explore Ametista</h1>
-            <div class="text-content">
-                <h2>Objetivo do projeto</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum saepe iure ducimus vitae mollitia ratione a quibusdam odio dignissimos tempora nesciunt totam, quo fugiat? Temporibus, necessitatibus. Fugit eum excepturi, minima quia harum vel quam temporibus laborum ullam, atque tenetur commodi consequatur, tempore unde at accusantium nisi ab rem facere alias autem ratione. Libero quas corporis ratione dignissimos facere nihil deleniti tempore voluptates vero magnam deserunt veniam animi expedita consectetur harum, blanditiis impedit! Eum minima maiores expedita assumenda. Fugiat optio, laudantium voluptatibus ipsa, laboriosam distinctio corporis vel reiciendis perspiciatis explicabo unde ea. Necessitatibus exercitationem quo ex </p>
-                <h2>Sobre o projeto</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat fugit facilis suscipit, unde, atque debitis repellat nulla dolor sed deleniti repellendus perspiciatis sunt officiis? Voluptatum laboriosam autem ut consequatur aliquam veritatis, tempore vel tempora? Eum, porro tempora ad ipsa ipsam, deleniti alias distinctio consequuntur non accusantium dolorem sit repudiandae aut magni amet, nobis nisi numquam dolore accusamus expedita nulla? Sunt saepe ex doloremque culpa deleniti illo tenetur commodi odit adipisci maxime, reiciendis laboriosam, deserunt labore delectus similique mollitia natus quibusdam. Consequuntur error nesciunt nostrum numquam recusandae fuga, optio expedita esse dolor unde quasi a accusantium cumque tempore, dolorum dolorem aperiam?</p>
+    <!-- Cards -->
+
+    <!-- Modelo 
+
+        <a class="card" href="#">
+            <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="Lago di Braies">
+            <div class="card_details">
+                <div class="name">Lago di Braies</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente</p> 
+                <div class="bottom_aligner">
+                    <span class="leia-mais">Leia mais</span>
+                </div>
             </div>
+        </a>
+
+     -->
+
+     <div class="container">
+        <div class="Cards">
+            <a class="card" href="./pages/cards/piramide.html">
+                <img src="./sources/images/piramide.jpg" alt="Pirâmide Esotérica">
+                <div class="card_details">
+                    <div class="name">Pirâmide Esotérica</div>
+                    <p>A pirâmide esotérica é um local para meditação, pois sustenta o poder mágico dos minerais em suas paredes internas.
+                        
+                        </p> 
+                    <div class="bottom_aligner">
+                        <span class="leia-mais">Leia mais</span>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="./pages/cards/mina beer.html">
+                <img src="../sources/images/beer.jpg" alt="Mina Beer">
+                <div class="card_details">
+                    <div class="name">Mina beer </div>
+                    <p>A Mina Beer, primeira microcervejaria subterrânea do mundo.</p> 
+                    <div class="bottom_aligner">
+                        <span class="leia-mais">Leia mais</span>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="./pages/cards/museu.html">
+                <img src="../sources/images/museu.jpg" alt="Lago di Braies">
+                <div class="card_details">
+                    <div class="name">Museu</div>
+                    <p>Com mais de 2.000 exemplares nacionais e internacionais.</p> 
+                    <div class="bottom_aligner">
+                        <span class="leia-mais">Leia mais</span>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="./pages/cards/museu do bambu.html">
+                <img src="../sources/images/bambu.jpg" alt="Lago di Braies">
+                <div class="card_details">
+                    <div class="name">Museu do Bambu</div>
+                    <p>O Museu do Bambu foi criado para oferecer ao visitante um amplo e rico acervo com peças produzidas com bambu. </p> 
+                    <div class="bottom_aligner">
+                        <span class="leia-mais">Leia mais</span>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="./pages/cards/belvedere.html">
+                <img src="../sources/images/belvedere.jpg" alt="Lago di Braies">
+                <div class="card_details">
+                    <div class="name">Belvedere Mina</div>
+                    <p>Encante-se com o deslumbrante restaurante subterrâneo, construído dentro de uma mina desativada. O primeiro restaurante subterrâneo do mundo.</p> 
+                    <div class="bottom_aligner">
+                        <span class="leia-mais">Leia mais</span>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="./pages/cards/vinícola.html">
+                <img src="../sources/images/vinicola.jpg" alt="Lago di Braies">
+                <div class="card_details">
+                    <div class="name">Vinícola Ametista</div>
+                    <p>A Vinícola Ametista impressiona com a maior cave subterrânea de envelhecimento de vinhos existente</p> 
+                    <div class="bottom_aligner">
+                        <span class="leia-mais">Leia mais</span>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="./pages/cards/igreja.html">
+                <img src="../sources/images/igreja.jpg" alt="Lago di Braies">
+                <div class="card_details">
+                    <div class="name">Igreja São Gabriel</div>
+                    <p>A Igreja São Gabriel de Ametista do Sul tem todo o seu interior revestido da pedra que dá o nome à cidade. Além do revestimento das paredes, a Igreja conta também com pia batismal feita com um geodo de Ametista.</p> 
+                    <div class="bottom_aligner">
+                        <span class="leia-mais">Leia mais</span>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="./pages/cards/LP.html">
+                <img src="../sources/images/LP.jpg" alt="Lago di Braies">
+                <div class="card_details">
+                    <div class="name">L.P Minerais do Brasil</div>
+                    <p>Na LP MINERAIS do BRASIL você vai encontrar a peça perfeita para você.</p> 
+                    <div class="bottom_aligner">
+                        <span class="leia-mais">Leia mais</span>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="./pages/cards/garimpo em atividade.html">
+                <img src="../sources/images/garimpo.jpg" alt="Lago di Braies">
+                <div class="card_details">
+                    <div class="name">Garimpo em Atividade</div>
+                    <p>Se aventure no Garimpo em Atividade, pilote sua moto pelo subterrâneo e tenha uma experiência inesquecível explorando uma galeria de pedras ametistas.</p> 
+                    <div class="bottom_aligner">
+                        <span class="leia-mais">Leia mais</span>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <img src="../sources/images/shopping.jpg" alt="Lago di Braies">
+                <div class="card_details">
+                    <div class="name">Shopping das Pedras</div>
+                    <p>No Shopping das Pedras está exposto variadas quantidades de mercadorias, como árvores, pássaros, enfeites em geral e joias.</p> 
+                    <div class="bottom_aligner">
+                        <span class="leia-mais">Leia mais</span>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <img src="../sources/images/trator.jpg" alt="Lago di Braies">
+                <div class="card_details">
+                    <div class="name">Trenzinho das Pedras</div>
+                    <p>O passeio de Trenzinho das Pedras é um passeio diferenciado onde o visitante tem a oportunidade de conhecer as belas paisagens da cidade e interior, em contato com a natureza. </p> 
+                    <div class="bottom_aligner">
+                        <span class="leia-mais">Leia mais</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a class="card" href="#">
+                <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="Lago di Braies">
+                <div class="card_details">
+                    <div class="name">Lago di Braies</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente</p> 
+                    <div class="bottom_aligner">
+                        <span class="leia-mais">Leia mais</span>
+                    </div>
+                </div>
+            </a>
+            
         </div>
     </div>
     <script src="./sources/script.js"></script>
