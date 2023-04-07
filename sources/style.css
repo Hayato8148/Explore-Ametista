@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&display=swap');
 
 :root {
-    --black: #01161E;
-    background: #a18bdd;
+    --black: #09011e;
+    --background: #a18bdd;
     --background-corpo: #FFFAFF;
     --header: #DAD3EE;
 }
@@ -34,9 +34,11 @@ header {
     font-weight: 800;
     font-size: 20px;
     align-items: center;
+    text-decoration: none;
+    color: var(--black);
 }
 
-.logo img {
+.logo svg {
     height: auto;
     max-width: 70px;
 }
@@ -120,8 +122,6 @@ header {
 }
 
 .text-content {
-    border: .5px solid rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
     display: flex;
     flex-direction: column;
     padding: 25px;
@@ -136,8 +136,11 @@ header {
     margin: 20px;
 }
 
-.text-content p {
-    padding: 15px 0 25px;
+.descrição {
+    text-align: justify;
+    border: .5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 15px;
 }
 
 
@@ -327,12 +330,13 @@ header {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
     z-index: 1;
 }
 
 .responsive-iframe {
-    position:absolute ;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -341,4 +345,22 @@ header {
     height: 100%;
     border: 0.3px solid rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-  }
+}
+
+/* tabela */
+
+.text-content table {
+    border: .5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 3px;
+    width: 100%;
+}
+
+.text-content th {
+    background-color: var(--background);
+    border-radius: 12px;
+}
+
+.text-content td {
+    width: 25%;
+}
