@@ -63,6 +63,7 @@ header {
     text-align: center;
     margin: auto;
     flex-grow: 1;
+    border-radius: 12px;
 }
 
 .nav-itens a:hover {
