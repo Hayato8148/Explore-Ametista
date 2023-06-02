@@ -137,6 +137,10 @@ header {
     margin: 20px;
 }
 
+.text-content p {
+    margin: 8px 0;
+}
+
 .descrição {
     text-align: justify;
     border: .5px solid rgba(0, 0, 0, 0.1);
